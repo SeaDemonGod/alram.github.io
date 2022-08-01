@@ -2,7 +2,7 @@ const display = document.getElementById("clock");
 
 // setting audio for alarm from link;
 
-const audio = new Audio('media/sia.mp3');
+const audio = new Audio('image/sia.mp3');
 audio.loop = true;
 
 let alarmTime = null;
