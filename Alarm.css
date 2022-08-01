@@ -4,6 +4,7 @@ html{
 body{
     min-height: 100%;
     margin:0;
+    /* making beutiful background image */
     background: linear-gradient(-40deg, #194d92 18%,#8b4b7b 48%,#73d869 59%,#e0d48b 100%);
     vertical-align: middle; 
    
@@ -11,6 +12,7 @@ body{
     text-align: center;
     justify-content: center;
     align-items: center;
+    /* bringging whole contents in center */
   }
  
 h2{
