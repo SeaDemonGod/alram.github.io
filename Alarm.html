@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv= "X-UA-Compatible" content= "IE=edge">
+        <meta name= "viewport" content= "width=device-width , intial-scale=1">
+        <title>Alarm</title>
+        <link rel="stylesheet" type="text/css" href= "Alarm.css">
+    </head>
+    <body>
+        <div id ="main-page">
+           <h2><marquee scrollamount ="13"><b><i><q>The bad news is time flies. The good news is you're the pilot.</q></i></b></marquee></h2>
+           <section class="container">
+                <div class="time-display">
+                  <img class ="timer" src = "image/clock2.jpg">
+                  <div id="clock"></div>
+                </div>
+                <form class = "setAlarm">
+                    <label class = "alarm-heading"><h3><i>Set Alarm(12 hrs Clock)</i></h3></label><br>
+                    <div class = "set-alarm-field">
+                        <input type = "number" name="a_hour" id = "a_hour" placeholder="HH" max = "12" min="00">
+                        <input type = "number" name="a_minute" id = "a_minute" placeholder="MM" max = "60" min="00">
+                        <input type = "number" name="a_second" id = "a_second" placeholder="SS" max = "60" min="00">
+                        <select name="zone" required>
+                            <option value="" selected disabled>Zone</option>
+                            <option value="AM">AM</option>
+                            <option value="PM">PM</option>
+                          </select>
+
+                    </div>
+                    <div class="controls">
+                        <button type="submit" class="set-alarm">Set Alarm</button>
+                        <button type="reset" onclick="clearAlarm()" class="clear-alarm">Stop Alarm</button>
+                    </div>
+                </form>
+
+           
+             <hr style="margin-top: 20px">
+            
+               <div>
+                 <h3 class="alarm-heading" style="margin-top: -5px;">Upcoming Alarms</h3>
+                </div>
+                <div>
+                <ul id = "myList" style = "padding-left: 55px;">
+                
+                </ul>
+                </div>
+           
+           
+            
+            </section>   
+        </div>
+        <script src= "Alarm.js"></script>
+    </body>
+</html>
